@@ -1,0 +1,107 @@
+.tiles.hire{
+     .tiles_content{
+        .chat-bubble-container {
+            position: relative;
+            height: 130px;
+            width: 130px;
+            margin: auto;
+        }
+
+        .chat-bubble {
+            background-color: $c-dark;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 130px;
+            width: 130px;
+            border-radius: 50%;
+            
+        }
+        .chat-bubble:before {
+            position: absolute;
+            content: "";
+            height: 16px;
+            width: 16px;
+            background-color: inherit;
+            bottom: 10px;
+            left: 15px;
+            border-radius: 2px;
+        }
+
+        .chat-bubble-shadow {
+            position: absolute;
+            width: 80%;
+            left: 10%;
+            height: 16px;
+            top: 160px;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+         span{
+            transition: all 0.5s ease;
+            display:block;
+            width: 100%;
+            font-size:$f-size30;
+            @extend .f-white;
+            position: absolute;
+            top: 30%;
+            left: 70%;
+            transform: rotate(-25deg) translate(-50%, -100%); 
+         }
+         
+     }
+     &:hover{
+       .tiles_content{
+            @media all and (min-width:$breakpoint-tablet){
+                .chat-bubble {animation: bubble-colors 10s infinite linear, bubble-move 3s infinite linear;}
+                .chat-bubble-shadow{animation: bubble-pulse 3s infinite linear;}
+            }
+            
+        }
+   }
+}
+
+@keyframes bubble-move {
+  0% {
+     transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes bubble-pulse {
+  0% {
+   transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes bubble-colors {
+  0% {
+    background-color: $c-dark;
+  }
+  20% {
+    background-color: $c-blue1;
+  }
+  40% {
+    background-color: $c-purple;
+  }
+  60% {
+    background-color: $c-pink2;
+  }
+  80% {
+    background-color: $c-pink1;
+  }
+  100% {
+    background-color: $c-dark;
+  }
+}

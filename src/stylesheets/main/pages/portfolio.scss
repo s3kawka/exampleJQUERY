@@ -1,0 +1,16 @@
+.tiles.portfolio{
+   .tiles_content{
+       padding:0;
+       overflow: hidden;
+       img{
+           height:100%;
+           transition: all 0.5s ease;
+           margin-left:-15px;
+           @media all and (max-width:$breakpoint-tablet){
+                width:100%;
+                height: auto;
+                margin-left:0;
+            }
+       }
+   }
+}

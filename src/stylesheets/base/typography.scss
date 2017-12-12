@@ -1,0 +1,84 @@
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin: 0;
+  padding: 0;
+  // 
+  // + * {
+  //   margin-top: 15px;
+  // }
+}
+p {
+  // line-height: 1.3em;
+}
+
+hr{
+  &.sep {
+    width: 55px;
+    border:none;
+    border-bottom: 6px solid $c-white;
+    margin: 10px auto;
+    display: block;
+  }
+}
+
+strong, b {
+ 
+}
+
+ul, ol {
+  padding-left: 15px;
+}
+
+ul {
+  &.custom-ul {
+    padding: 0;
+    list-style: none;
+    li {
+      position: relative;
+      padding-left: 20px;
+      &:before {
+        position: absolute;
+        top: 3px;
+        left: 0;
+        content: '';
+        @extend .custom-icon--tick-blue;
+      }
+    }
+  }
+
+}
+
+
+ol {
+  //color: $c-grey07;
+  li {
+    //color: $c-grey02;
+    ol {
+      list-style: lower-latin;
+      // color: $c-grey07;
+      // li { color: $c-grey02; }
+    }
+  }
+}
+
+
+
+//underline the span
+.span_underline {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    @media all and (max-width: $breakpoint-desktop) {
+        @include font-size($f-size10);
+    }
+}
+
+.hr-white {
+    width: 20px;
+    height: 2px;
+    background: $c-white;
+    display: block;
+    margin-top: 2px;
+    margin-left: 0;
+    margin-bottom: 10px;
+}

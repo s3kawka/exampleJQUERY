@@ -1,0 +1,39 @@
+// custom values breakpoints (form layouts) sklauje w dol (desktop-mobile)
+$breakpoint-large: 1920px;
+$breakpoint-desktop: 1365px;
+$breakpoint-tablet: 767px;
+$breakpoint-mobile: 320px;
+
+//wrap width
+$wrap-desktop-max: 1366px;
+$wrap-desktop: 1240px;//1350px;
+$wrap-tablet: 768px;
+$wrap-mobile: 320px;
+
+//main colors
+$c-white: #fff;//
+$c-grey: #e4e8eb;//(228,232,235)
+$c-blue1: #3ac;//(51,170,204)
+$c-blue2: #32aacc;//(50,170,204)
+$c-blue3: #64aacc;//(100,170,204)
+$c-purple: #96aacc;//(150,170,204)
+$c-pink1: #c8aacc;//(200,170,204)
+$c-pink2: #faaacc;//(250,170,204)
+$c-dark: #362f3c; //(54,47,60)
+
+
+$f-size50:50px;
+$f-size45:45px;
+$f-size40:40px;
+$f-size35:35px;
+$f-size30:30px;
+$f-size25:25px;
+$f-size20:20px;
+$f-size15:15px;
+$f-size11:11px;
+$f-size10:10px;
+
+
+
+// base transitions
+$transition-base: all 0.3s ease-in-out;

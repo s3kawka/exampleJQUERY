@@ -1,0 +1,48 @@
+// fonts sizes
+
+.f-size40{
+  @include font-size($f-size40);
+}
+.f-size35 {
+  @include font-size($f-size35);
+}
+.f-size30 {
+  @include font-size($f-size30);
+}
+.f-size25 {
+  @include font-size($f-size25);
+}
+.f-size20 {
+  @include font-size($f-size20);
+}
+.f-size15{
+  @include font-size($f-size15);
+}
+.f-size11{
+@include font-size($f-size11);
+}
+.f-size10{
+@include font-size($f-size10);
+}
+
+// fonts weight and style
+.f-w-light{
+  font-weight: 300;
+}
+.f-w-normal{
+  font-weight: 400;
+}
+.f-w-bold{
+  font-weight: 700;
+}
+.f-italic {
+  font-style: italic;
+}
+
+.f-oswald{
+  font-family: 'Oswald', sans-serif;
+}
+.f-norican{
+  font-family: 'Norican', cursive;
+}
+
